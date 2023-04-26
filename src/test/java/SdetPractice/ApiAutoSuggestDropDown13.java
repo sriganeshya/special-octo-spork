@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ApiAutoSuggestDropDown {
+public class ApiAutoSuggestDropDown13 {
 	public static void main(String[] args) throws InterruptedException {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
