@@ -20,11 +20,14 @@ public class HandelIframes18 {
 //	driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-tree.html");
 //	driver.manage().window().maximize();
 //	
-//	/*
-//	 * driver. switchTo() .frame(name of the frame/id of the frame)
-//       driver. switchTo( ) . frame (WebE1ement)
-//	   driver. switchTo() . frame(0) -- index
-//	 */
+	/*
+	 * driver. switchTo() .frame(name of the frame/id of the frame)
+       driver. switchTo( ) . frame (WebE1ement)
+	   driver. switchTo() . frame(0) -- index
+	
+	   driver.switchTo().defaultContent();
+	   driver.switchTo().parentFrame();
+	 */
 //	
 //	//1st frame
 //	driver.switchTo().frame("packageListFrame"); // name of the frame
@@ -66,8 +69,14 @@ public class HandelIframes18 {
 	driver.switchTo().frame("iframeResult"); // switch to outer iframe
 	driver.switchTo().frame(0); // switch to inner iframe
 	
-
+	System.out.println("Text present inside the inner frame" +driver.findElement(By.xpath("//h1[normalize-space()='This page is displayed in an iframe']")).getText() );
 	
+	driver.switchTo().parentFrame(); // go to parent frame - use this method
+	String parent = driver.findElement(By.xpath("//p[contains(text(),'You can use the height and width attributes to spe')]")).getText();
+	// String variable method used for only getText() method
+	System.out.println("text present in parent frame" + parent);
+	
+	driver.quit();
 	}
 }
 
