@@ -47,7 +47,7 @@ public class synchronizationProblem19 {
 //	driver.findElement(By.xpath("driver.findElement(By.id(\"APjFqb\")).sendKeys(\"Selenium\");")).click();
 	
 //	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(3));	
-	WebElement element = mywait.until (ExpectedConditions.visibi1ityOfE1ementLocated(By.xpath("Facebook")));
-	element. click();
+	//WebElement element = mywait.until (ExpectedConditions.visibi1ityOfE1ementLocated(By.xpath("Facebook")));
+	//element. click();
 	}
 }
